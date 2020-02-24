@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="" />
+    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Xg3iRRGoswBWiXtVe6kVhKDDSb" />
   <component name="ProjectViewState">
@@ -14,9 +21,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-compose.yml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
@@ -84,6 +93,10 @@
       <updated>1581454037145</updated>
       <workItem from="1581454041409" duration="1204000" />
       <workItem from="1581953616242" duration="5726000" />
+      <workItem from="1582389339709" duration="5317000" />
+      <workItem from="1582514492913" duration="954000" />
+      <workItem from="1582515781230" duration="434000" />
+      <workItem from="1582558035694" duration="513000" />
     </task>
     <servers />
   </component>
@@ -91,10 +104,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581958660423">
+    <state x="232" y="20" key="#Docker" timestamp="1582404499856">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1581958660423" />
+    <state x="232" y="20" key="#Docker/0.0.1280.720@0.0.1280.720" timestamp="1582404499856" />
+    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582404801299">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582404801299" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
