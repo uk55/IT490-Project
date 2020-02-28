@@ -1,0 +1,6 @@
+Flask==1.1.1
+pika
+netifaces
+requests
+mysql-connector-python
+psycopg2
