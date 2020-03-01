@@ -9,7 +9,7 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: craft
+      MYSQL_ROOT_PASSWORD: changeme
       MYSQL_DATABASE: craft
       MYSQL_USER: craft
       MYSQL_PASSWORD: craft
