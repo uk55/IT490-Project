@@ -3,25 +3,25 @@ services:
   messaging:
     image: 'rabbitmq:3-management'
     ports:
-        - 5672:5672
+        - 15672:15672
   mysql:
     image: 'mysql'
     ports:
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: changeme
-  admin:
-    image: adminer
-    ports:
-      - "8080:8080"
+      MYSQL_ROOT_PASSWORD: craft
+      MYSQL_DATABASE: craft
+      MYSQL_USER: craft
+      MYSQL_PASSWORD: craft
+    volumes:
+      - db-data:/var/lib/mysql
 
   front_end:
     build: ./front_end
     ports:
-      - 5000:5000
+      - 5001:5001
 
-  back_end:
-    image:
-    build: ./back_end
-    ports:
-      - 5672:5672
+
+## Placeholder for the persistent db storage
+volumes:
+  db-data:
