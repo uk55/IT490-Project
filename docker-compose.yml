@@ -20,6 +20,7 @@ services:
       - db-data:/var/lib/mysql
 
   front_end:
+    container_name: front_end
     build: ./front_end
     ports:
       - 5000:5000

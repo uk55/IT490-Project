@@ -12,6 +12,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1Xg3iRRGoswBWiXtVe6kVhKDDSb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -117,7 +118,8 @@
       <workItem from="1582558035694" duration="5778000" />
       <workItem from="1582857337432" duration="821000" />
       <workItem from="1582999280614" duration="20357000" />
-      <workItem from="1583104011287" duration="9230000" />
+      <workItem from="1583104011287" duration="9388000" />
+      <workItem from="1583160023444" duration="5029000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -154,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583113530863</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="RabbitMQ works on port 15672">
+      <created>1583115842950</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583115842951</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +175,8 @@
     <MESSAGE value="Trying to Fix FrontEnd error" />
     <MESSAGE value="Added Login Page with admin as username and password" />
     <MESSAGE value="Added Signup page. Does not work but shows all the fields. Needs to change the app.py and tweak singup.html little to fix these errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Signup page. Does not work but shows all the fields. Needs to change the app.py and tweak singup.html little to fix these errors." />
+    <MESSAGE value="RabbitMQ works on port 15672" />
+    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ works on port 15672" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="20" key="#Docker" timestamp="1582404499856">
@@ -178,10 +188,10 @@
     </state>
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583107882819" />
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582404801299" />
-    <state x="5" y="0" key="CommitChangelistDialog2" timestamp="1583113529935">
+    <state x="5" y="0" key="CommitChangelistDialog2" timestamp="1583115841848">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="5" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583113529935" />
+    <state x="5" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583115841848" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -191,9 +201,10 @@
     </state>
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583015685052" />
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581454233805" />
-    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583021010349">
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583163827802">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583021010349" />
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1583163827802" />
   </component>
 </project>
