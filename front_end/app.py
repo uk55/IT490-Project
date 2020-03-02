@@ -17,5 +17,17 @@ def login():
     return render_template('login.html', error=error)
 
 
+# Route for handling the Signup page logic
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    error = None
+    if request.method == 'POST':
+        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
+            error = 'Invalid Credentials!!!'
+        else:
+            return redirect(url_for('home'))
+    return render_template('signup.html', error=error)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
