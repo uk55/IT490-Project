@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
 EXPOSE 5000
-COPY . /app
+COPY . /app 
 WORKDIR /app
 RUN pip install -r requirements.txt
 ENV FLASK_APP=app.py

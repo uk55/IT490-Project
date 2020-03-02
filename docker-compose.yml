@@ -19,7 +19,7 @@ services:
   front_end:
     build: ./front_end
     ports:
-      - 5001:5001
+      - 5000:5000
 
 
 ## Placeholder for the persistent db storage
