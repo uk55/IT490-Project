@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
+    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="Added flask code to require authentication in order to view the webpage.">
+      <change afterPath="$PROJECT_DIR$/front_end/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_end/templates/welcome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +123,7 @@
       <workItem from="1582857337432" duration="821000" />
       <workItem from="1582999280614" duration="20357000" />
       <workItem from="1583104011287" duration="9388000" />
-      <workItem from="1583160023444" duration="6310000" />
+      <workItem from="1583160023444" duration="16816000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -175,7 +180,8 @@
     <MESSAGE value="Added Login Page with admin as username and password" />
     <MESSAGE value="Added Signup page. Does not work but shows all the fields. Needs to change the app.py and tweak singup.html little to fix these errors." />
     <MESSAGE value="RabbitMQ works on port 15672" />
-    <option name="LAST_COMMIT_MESSAGE" value="RabbitMQ works on port 15672" />
+    <MESSAGE value="Added flask code to require authentication in order to view the webpage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added flask code to require authentication in order to view the webpage." />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="20" key="#Docker" timestamp="1582404499856">
@@ -187,10 +193,10 @@
     </state>
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583107882819" />
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582404801299" />
-    <state x="5" y="0" key="CommitChangelistDialog2" timestamp="1583115841848">
+    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1583214268680">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="5" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583115841848" />
+    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583214268680" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -200,10 +206,14 @@
     </state>
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583015685052" />
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581454233805" />
-    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583168348280">
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583195829772">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583021010349" />
-    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1583168348280" />
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583195829772" />
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1583170524392" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583197659928">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583197659928" />
   </component>
 </project>

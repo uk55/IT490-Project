@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Reservation System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to IT490::Group 7</h1>
+    <br>
+    <p>We want to make a web application that will tell you what room is available and at what time the next room will be free.
+        The library at NJIT doesn’t have a system that can tell you the schedule so, our web app will show the rooms schedule
+        and when the next room will be available. This way students don’t have to wait for hours in line. Users can login,
+        register/reserve the next available room and will have a chat feature that users can chat with the librarian if they have any questions/comments.</p>
+
+    <br>
+    <p>Click <a href="/logout"> Here</a>to Logout </p>
+    {% for message in get_flashed_messages() %}
+        {{message}}
+    {% endfor %}
+
+</div>
+</body>
+</html>

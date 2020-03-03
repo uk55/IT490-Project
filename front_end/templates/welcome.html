@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Room Reservation System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to IT490::Group 7</h1>
+
+    <br>
+    <h5><strong><i>Navigate to "/login" to view the login page.</i></strong></h5>
+    <h5><strong><i>Navigate to "/signup" to view the Signup page.</i></strong></h5>
+    <br>
+    <p>Click <a href="/"> Here </a>to go Home </p>
+    {% for message in get_flashed_messages() %}
+    {{message}}
+    {% endfor %}
+
+
+
+
+</div>
+</body>
+</html>
