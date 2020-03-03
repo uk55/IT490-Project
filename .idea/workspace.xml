@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="Added flask code to require authentication in order to view the webpage.">
-      <change afterPath="$PROJECT_DIR$/front_end/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end/templates/welcome.html" afterDir="false" />
+    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front_end/sql.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +119,8 @@
       <workItem from="1582857337432" duration="821000" />
       <workItem from="1582999280614" duration="20357000" />
       <workItem from="1583104011287" duration="9388000" />
-      <workItem from="1583160023444" duration="16816000" />
+      <workItem from="1583160023444" duration="17278000" />
+      <workItem from="1583255893350" duration="3551000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -167,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583115842951</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added flask code to require authentication in order to view the webpage.">
+      <created>1583214362920</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583214362920</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,10 +197,10 @@
     </state>
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583107882819" />
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582404801299" />
-    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1583214268680">
+    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1583214362145">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583214268680" />
+    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583214362145" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -211,9 +215,9 @@
     </state>
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583195829772" />
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1583170524392" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583197659928">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583258845992">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583197659928" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583258845992" />
   </component>
 </project>
