@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front_end/sql.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <workItem from="1582999280614" duration="20357000" />
       <workItem from="1583104011287" duration="9388000" />
       <workItem from="1583160023444" duration="17278000" />
-      <workItem from="1583255893350" duration="3551000" />
+      <workItem from="1583255893350" duration="7202000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
