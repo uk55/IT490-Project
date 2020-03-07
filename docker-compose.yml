@@ -6,18 +6,37 @@ services:
     ports:
         - 5672:5672
         - 15672:15672
+
   mysql:
     image: 'mysql'
     container_name: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: 'db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_ROOT_PASSWORD: 'password'
     ports:
       - 3306:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: changeme
-      MYSQL_DATABASE: craft
-      MYSQL_USER: craft
-      MYSQL_PASSWORD: craft
+
     volumes:
       - db-data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+    restart: always
+      #MYSQL_USERNAME: 'admin'
+      #MYSQL_ROOT_PASSWORD: 'admin'
+    links:
+      - mysql:mysql
+    ports:
+      - 8080:80
+    #volumes:
+    #  -  /sessions
+
 
   front_end:
     container_name: front_end

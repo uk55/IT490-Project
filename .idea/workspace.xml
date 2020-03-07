@@ -3,12 +3,278 @@
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/._colorlib-regform-7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._.sass-cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._fonts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._images" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/._vendor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/._21880c0ffe15753a53f8402e9f64e1077e071510" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/._2866be86c578bb583fbf023501bb9fd24cc3bf22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/._3948936f84e1a30385e73a9be140b58b48c82e15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/._643489b018602f15119d8f44aeb7fc79468873a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/._7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/._9dc767a56f3dc2f8a933300255cd2265f13191d4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/21880c0ffe15753a53f8402e9f64e1077e071510/._style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/._extend.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/._fonts.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/._global.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/._minxi.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/._variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/3948936f84e1a30385e73a9be140b58b48c82e15/._style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/643489b018602f15119d8f44aeb7fc79468873a9/._main.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/643489b018602f15119d8f44aeb7fc79468873a9/._responsive.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/._extend.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/._fonts.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/._global.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/._minxi.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/._variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/9dc767a56f3dc2f8a933300255cd2265f13191d4/._main.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/.sass-cache/9dc767a56f3dc2f8a933300255cd2265f13191d4/._responsive.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/css/._style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/css/._style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/._material-icon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/._poppins" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/._css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/._fonts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/css/._material-design-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/css/._material-design-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/fonts/._Material-Design-Iconic-Font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/fonts/._Material-Design-Iconic-Font.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/fonts/._Material-Design-Iconic-Font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/fonts/._Material-Design-Iconic-Font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/material-icon/fonts/._Material-Design-Iconic-Font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-300italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-500italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-600.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-600.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-600.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-600.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-600.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-700italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-800italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._poppins-v5-latin-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-700italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/fonts/poppins/._roboto-condensed-v16-latin-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/images/._signin-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/images/._signup-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/js/._main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/._common" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/._layouts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/._style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/common/._extend.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/common/._fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/common/._global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/common/._minxi.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/common/._variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/layouts/._main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/scss/layouts/._responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/vendor/._jquery" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/vendor/jquery/._jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/__MACOSX/colorlib-regform-7/vendor/jquery/._jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/21880c0ffe15753a53f8402e9f64e1077e071510/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/extend.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/fonts.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/global.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/minxi.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/3948936f84e1a30385e73a9be140b58b48c82e15/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/643489b018602f15119d8f44aeb7fc79468873a9/main.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/643489b018602f15119d8f44aeb7fc79468873a9/responsive.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/extend.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/fonts.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/global.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/minxi.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/9dc767a56f3dc2f8a933300255cd2265f13191d4/main.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/.sass-cache/9dc767a56f3dc2f8a933300255cd2265f13191d4/responsive.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/material-icon/css/material-design-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/material-icon/css/material-design-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/images/signin-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/images/signup-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/scss/common/extend.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/scss/common/fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/scss/common/global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/scss/common/minxi.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/scss/common/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/scss/layouts/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/scss/layouts/responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/vendor/jquery/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/colorlib-regform-7/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/demo_mysql_connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/sql.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="IT490-Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,7 +386,7 @@
       <workItem from="1582999280614" duration="20357000" />
       <workItem from="1583104011287" duration="9388000" />
       <workItem from="1583160023444" duration="17278000" />
-      <workItem from="1583255893350" duration="7202000" />
+      <workItem from="1583255893350" duration="20019000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -197,6 +463,10 @@
     </state>
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583107882819" />
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582404801299" />
+    <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583509944588">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583509944588" />
     <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1583214362145">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -215,9 +485,9 @@
     </state>
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583195829772" />
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1583170524392" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583258845992">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583471414624">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583258845992" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583471414624" />
   </component>
 </project>
