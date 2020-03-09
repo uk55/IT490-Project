@@ -4,7 +4,7 @@ from functools import wraps
 '''
 
 from flask import Flask, request, render_template # redirect, url_for, request, session, flash
-from flaskext.mysql import MySQL
+import mysql.connector as mysql
 #from functools import wraps
 #https://youtu.be/e360Gm07oRw --flask.ext ERROR saying module not found
 mysql = MySQL()
