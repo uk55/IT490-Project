@@ -1,7 +1,43 @@
+'''
 from flask import Flask, request, render_template, redirect, url_for, request, session, flash
 from functools import wraps
+'''
+
+from flask import Flask, request, render_template # redirect, url_for, request, session, flash
+from flaskext.mysql import MySQL
+#from functools import wraps
+#https://youtu.be/e360Gm07oRw --flask.ext ERROR saying module not found
+mysql = MySQL()
+app = Flask(__name__)
+
+#app.secret_key="my precious"
+
+app.config['MySQL_DATABASE_USER']='root'
+app.config['MySQL_DATABASE_PASSWORD']='root'
+app.config['MySQL_DATABASE_DB']='test'
+app.config['MySQL_DATABASE_HOST']='localhost'
+mysql.init_app(app)
+
+@app.route('/')
+def my_form():
+    return render_template('login.html')
+
+@app.route('/',methods=['post'])
+def Authenticate():
+    username = request.form['username']
+    password= request.form['password']
+    cursor = mysql.connect().cursor()
+    cursor.execute("SELECT * from user where username='" + username + " ' and password='"+ password + " ' ")
+    data= cursor.fetchone()
+    if data is None:
+        return "Username or password is incorrect"
+    else:
+        "Login Sucessful!"
 
 
+if __name__ == '__main__':
+    app.run(debug=True)
+'''
 app = Flask(__name__)
 
 app.secret_key="my precious"
@@ -62,3 +98,5 @@ def signup():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+'''
