@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rabbitmqtest.net" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/app.py" afterDir="false" />
     </list>
