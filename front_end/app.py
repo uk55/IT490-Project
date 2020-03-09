@@ -1,9 +1,10 @@
-from flask import Flask, render_template, redirect, url_for, request, session, flash
+from flask import Flask, request, render_template, redirect, url_for, request, session, flash
 from functools import wraps
+
+
 app = Flask(__name__)
 
 app.secret_key="my precious"
-
 
 def login_required(f):
     @wraps(f)
