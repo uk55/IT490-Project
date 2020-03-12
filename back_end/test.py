@@ -141,8 +141,8 @@ for ip in active_hosts:
             db = mysql.connect(
                 host     = ip,
                 user     = 'test',
-                passwd   = 'test',
-                database = 'test',
+                password   = 'test',
+                database = 'it490db',
             )
             db.close()
         except mysql.Error as err:

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +128,9 @@
       <workItem from="1583160023444" duration="17278000" />
       <workItem from="1583255893350" duration="25095000" />
       <workItem from="1583695228391" duration="16273000" />
+      <workItem from="1583767804171" duration="907000" />
+      <workItem from="1583947946778" duration="1288000" />
+      <workItem from="1583992086783" duration="2156000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>

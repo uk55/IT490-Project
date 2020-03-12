@@ -44,6 +44,10 @@ services:
     ports:
       - 5000:5000
 
+  back_end:
+    container_name: back_end
+    build: ./back_end
+    image: python:3.7-alpine
 
 ## Placeholder for the persistent db storage
 volumes:
