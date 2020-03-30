@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front_end/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/static/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/static/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/Assign_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/Assign_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/create_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/create_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/room_availability.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/room_availability.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/student_dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/student_dash.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +44,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\front_end\templates" />
       <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\back_end" />
       <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\front_end" />
-      <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\front_end\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.front_end: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml[backend, db, frontend, messaging]: Compose Deployment">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -55,13 +64,16 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.front_end: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+    <configuration name="docker-compose.yml[backend, db, frontend, messaging]: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="commandLineOptions" value="--build" />
           <option name="services">
             <list>
-              <option value="front_end" />
+              <option value="backend" />
+              <option value="db" />
+              <option value="frontend" />
+              <option value="messaging" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -86,7 +98,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml.front_end: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml[backend, db, frontend, messaging]: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml[messaging, mysql, front_end]: Compose Deployment" />
     </list>
     <recent_temporary>
@@ -139,7 +151,7 @@
       <workItem from="1583992086783" duration="2156000" />
       <workItem from="1583996216016" duration="262000" />
       <workItem from="1583996676314" duration="101000" />
-      <workItem from="1585526849494" duration="5876000" />
+      <workItem from="1585526849494" duration="8750000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -242,10 +254,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="232" y="20" key="#Docker/0.0.1280.720@0.0.1280.720" timestamp="1582404499856" />
-    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583107882819">
+    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585534428015">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583107882819" />
+    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1585534428015" />
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582404801299" />
     <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583715656754">
       <screen x="0" y="0" width="1280" height="720" />

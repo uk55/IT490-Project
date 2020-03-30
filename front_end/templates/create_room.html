@@ -37,7 +37,7 @@
             var purpose = $("#purpose").val();
             var status = "empty";
             $.ajax({
-                url: "http://127.0.0.1:5000/room",
+                url: "http://127.0.0.1:3000/room",
                 type: "POST",
                 contentType: "application/json",
                 data: JSON.stringify({ "name": name, "purpose": purpose, "status": status }),

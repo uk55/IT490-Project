@@ -44,7 +44,7 @@
 
         function fetch_allocated_room() {
             $.ajax({
-                url: "http://127.0.0.1:5000/allocate_rooms",
+                url: "http://127.0.0.1:3000/allocate_rooms",
                 type: "GET",
                 contentType: "application/json",
                 headers: { 'x-access-tokens': localStorage.getItem('token') },
@@ -77,7 +77,7 @@
 
             var rom_no = $("#free_room").val();
             $.ajax({
-                url: `http://127.0.0.1:5000/free_rooms/${rom_no}`,
+                url: `http://127.0.0.1:3000/free_rooms/${rom_no}`,
                 type: "DELETE",
                 contentType: "application/json",
                 headers: { 'x-access-tokens': localStorage.getItem('token') },
@@ -90,7 +90,7 @@
                     var status = $("#status").val();
                     console.log(status)
                     $.ajax({
-                        url: `http://127.0.0.1:5000/room/${free_room}`,
+                        url: `http://127.0.0.1:3000/room/${free_room}`,
                         type: "PUT",
                         contentType: "application/json",
                         headers: { 'x-access-tokens': localStorage.getItem('token') },

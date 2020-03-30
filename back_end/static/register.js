@@ -4,7 +4,7 @@ $("document").ready(function(){
         var password = $("#password").val();
 
             $.ajax({
-            url: "http://localhost:5000/register",
+            url: "http://localhost:3000/register",
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({"message": "registered successfully"})     

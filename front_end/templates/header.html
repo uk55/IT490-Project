@@ -1,0 +1,183 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<html>
+  <head>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<style>
+    body#LoginForm{ background-image:url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;}
+
+.form-heading { color:#fff; font-size:23px;}
+.panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 10px auto 30px;
+  max-width: 38%;
+  padding: 150px 100px 100px 111px;
+}
+
+.login-form .form-group {
+  margin-bottom:10px;
+}
+.login-form{ text-align:center;}
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.login-form  .btn.btn-primary {
+  background: #f0ad4e none repeat scroll 0 0;
+  border-color: #f0ad4e;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+.forgot {
+  text-align: left; margin-bottom:30px;
+}
+.botto-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
+}
+.login-form .btn.btn-primary.reset {
+  background: #ff9900 none repeat scroll 0 0;
+}
+.back { text-align: left; margin-top:10px;}
+.back a {color: #444444; font-size: 13px;text-decoration: none;}
+
+
+</style>
+
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: rgb(111, 76, 175);
+      color: white;
+    }
+
+    .hide {
+      display: none;
+    }
+    </style>
+    
+</head>
+<body id="LoginForm">
+    <div class="topnav">
+
+        <a class="" href="/" id="page_home">Home</a>
+        <a class="" href="/signup_librarian" id="page_reg_lib" >Register Librarian</a>
+        <a class="" href="/signup" id="page_reg_stu">Student Registration</a>
+        <a class="" href="" onclick="logout" id="logout">Logout</a>
+        <a class="" href="/" id="page_login">Login</a></button>
+  
+      </div>
+      
+    <div class="container">
+
+
+        {% block content %}
+
+        {% endblock %}
+
+
+<script type="text/javascript">
+    function parseJwt(token) {
+      var base64Url = token.split('.')[1];
+      var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+      var jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+
+      return JSON.parse(jsonPayload);
+    };
+    $("document").ready(function () {
+      var token = localStorage.getItem("token")
+        if(token) {
+          $("#page_home").removeClass("hide");
+          $("#page_reg_lib").addClass("hide");
+          $("#page_reg_stu").addClass("hide");
+          $("#logout").removeClass("hide");
+          $("#page_login").addClass("hide");
+          if(parseJwt(token).admin == true) {
+            $("#page_home").attr("href", "/librarian");
+          }
+          else {
+            $("#page_home").attr("href", "/student_dash");
+          }
+        } else {
+          $("#page_home").addClass("hide");
+          $("#page_reg_lib").removeClass("hide");
+          $("#page_reg_stu").removeClass("hide");
+          $("#logout").addClass("hide");
+          $("#page_login").removeClass("hide");         
+        }
+        $("#logout").click(function (e) {
+            e.preventDefault();
+            localStorage.removeItem("token");
+            window.location.href="/";
+            // $.ajax({
+            //     // url: "http://127.0.0.1:5000",
+            //     type: "POST",
+            //     contentType: "application/json",
+            //     data: JSON.stringify({ "msg":"token cleared" }),
+            //     success: function (data) {
+            //         localStorage.clear();
+            //         alert("You Are successfully logout");
+            //         window.location.href="/",
+            //         console.log(data)
+            //     }
+
+            // })
+
+        });
+    });  
+</script>
+
+
+</body>
+</html>
+    
