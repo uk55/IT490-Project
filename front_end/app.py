@@ -1,63 +1,66 @@
-from flask import Flask, request, render_template, redirect, url_for, request, session, flash
-from functools import wraps
+from flask import Flask, render_template, redirect,url_for
 
-app = Flask(__name__)
+import datetime
 
-app.secret_key="my precious"
 
-def login_required(f):
-    @wraps(f)
-    def wrap(*args, **kwargs):
-        if 'logged_in' in session:
-            return f(*args, **kwargs)
-        else:
-            flash('You need to login first.')
-            return redirect(url_for('login'))
-    return wrap
 
-@app.route('/')
-@login_required
-def home():
-        # return 'Welcome To IT490-Group 7'
-        return render_template('index.html')
+# from flask_jwt_extended import (JWTManager, jwt_required, create_access_token,get_jwt_claims)
+# from flask_jwt import JWT
+# import sqlite3
 
-@app.route('/welcome')
-@login_required
-def welcome():
-    return render_template('welcome.html')
 
-# Route for handling the login page logic
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    error = None
-    if request.method == 'POST':
-        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
-            error = 'Invalid Credentials!!!'
-        else:
-            session['logged_in']=True
-            flash("You were just Logged in!")
-            return redirect(url_for('home'))
-    return render_template('login.html', error=error)
+app = Flask(__name__ , static_url_path='/static')
 
-@app.route('/logout')
-@login_required
+app.config['SECRET_KEY']='Th1s1ss3cr3t'
+
+
+
+
+@app.route("/", methods=['GET','POST'])
+def index():
+    return render_template("login.html")
+
+@app.route("/logout")
 def logout():
-    session.pop('logged_in', None)
-    flash("You have been successfully Logged Out!")
-    return redirect(url_for('welcome'))
+    return render_template("login.html")
 
 
-# Route for handling the Signup page logic
-@app.route('/signup', methods=['GET', 'POST'])
+@app.route("/librarian")
+def librarian_dash():
+    return render_template("librarian_dashboard.html")
+
+@app.route("/student_dash")
+def student_dash():
+    return render_template("student_dash.html")
+
+
+
+@app.route("/signup_librarian")
+def signup_librarian():
+
+    return render_template("registration_librarian.html")
+
+
+@app.route("/signup")
 def signup():
-    error = None
-    if request.method == 'POST':
-        if request.form['username'] != 'admin' or request.form['password'] != 'admin':
-            error = 'Invalid Credentials!!!'
-        else:
-            return redirect(url_for('home'))
-    return render_template('signup.html', error=error)
+
+    return render_template("registration.html")
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route("/gen_room")
+def generate_room():
+    return render_template("create_room.html")
+
+@app.route("/assign_room")
+def assign_room():
+    return render_template("Assign_room.html")
+
+@app.route("/availability")
+def availability_room():
+    return render_template("room_availability.html")
+
+if __name__ == "__main__":
+
+    app.run(debug=True, port=3000, host='0.0.0.0')
+
+

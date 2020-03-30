@@ -1,0 +1,57 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<h1 class="form-heading">Create The Room</h1>
+<div class="login-form">
+    <div class="main-div">
+        <div class="panel">
+            <h2>Please Create The room</h2>
+            <p>Please enter the room detail</p>
+        </div>
+        <form id="login">
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="purpose" placeholder="Purpose">
+            </div>
+            <!-- <div class="form-group">
+                <input type="text" class="form-control" id="status" placeholder="status" required>
+            </div> -->
+
+            <button type="submit" class="btn btn-primary" id="send">Create Room</button>
+
+            <a href="/assign_room">Assign a room to a student</a>
+
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    $("document").ready(function () {
+        $("#login").submit(function (e) {
+            e.preventDefault();
+            var name = $("#name").val();
+            var purpose = $("#purpose").val();
+            var status = "empty";
+            $.ajax({
+                url: "http://127.0.0.1:5000/room",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ "name": name, "purpose": purpose, "status": status }),
+                headers:{'x-access-tokens':localStorage.getItem('token')},
+                success: function (data) {
+                    alert("Room Has been Created");
+                    window.location.href="/librarian",
+                    console.log(data)
+                }
+
+            })
+
+        });
+    });  
+</script>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<h1 class="form-heading">Registration Form</h1>
+<div class="login-form">
+    <div class="main-div">
+        <div class="panel">
+            <h2>Registration</h2>
+            <p>Please enter your username and password</p>
+        </div>
+        <form id="login">
+
+            <div class="form-group">
+
+
+                <input type="text" class="form-control" id="name" placeholder="User name">
+
+            </div>
+
+            <div class="form-group">
+
+                <input type="password" class="form-control" id="password" placeholder="Password">
+
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="send">Register</button>
+            <a href="/">Already registered</a>
+
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+    $("document").ready(function () {
+        $("#login").submit(function (e) {
+            e.preventDefault();
+            var name = $("#name").val();
+            console.log(name);
+
+            var password = $("#password").val();
+            console.log(password);
+
+            $.ajax({
+                url: "http://127.0.0.1:5000/register",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ "name": name, "password": password }),
+                
+                success: function (data) {                    
+                    window.location.href = "/",
+                    console.log(data)
+                    
+                }
+            })
+        });
+    });  
+</script>
+
+{% endblock %}

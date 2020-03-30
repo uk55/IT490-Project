@@ -1,0 +1,146 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<h1 class="form-heading">Assign The Room</h1>
+<div class="login-form">
+  <div class="main-div">
+    <div class="panel">
+      <h2>Please Assign The room</h2>
+      <p>Please enter the room detail</p>
+    </div>
+    <form id="login_allocate_room">
+
+      <div class="form-group">
+        <label for="email">Username : </label>
+        <select id="allocated" name="allocated">
+
+          <option value=""></option>
+
+        </select>
+
+      </div>
+      <div class="form-group">
+
+        <label for="room">Room Number : </label>
+
+        <select id="room_no" name="room_no">
+
+          <option value=""></option>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="date" class="form-control" id="date" name="date">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="start_time" placeholder="start_time">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="end_time" placeholder="end_time">
+        <input type="hidden" id="status" value="occupied">
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="send">Create Room</button>
+
+      <!-- <a href="/availability">Room availability</a> -->
+
+    </form>
+  </div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  $("document").ready(function () {
+
+    $.ajax({
+      url: "http://127.0.0.1:5000/users",
+      type: "GET",
+      contentType: "application/json",
+      headers: { 'x-access-tokens': localStorage.getItem('token') },
+      success: function (res) {
+        console.log(res)
+        var options = "";
+        for (item of res.users) {
+          console.log(item)
+          options = options + `<option value="${item.name}"> ${item.name}  </option>`
+        }
+        $("#allocated").html(options)
+      }
+    })
+
+    $.ajax({
+      url: "http://127.0.0.1:5000/rooms/empty",
+      type: "GET",
+      contentType: "application/json",
+      headers: { 'x-access-tokens': localStorage.getItem('token') },
+      success: function (res) {
+        console.log(res)
+        var options = "";
+        for (item of res.list_of_rooms) {
+          console.log(item)
+          options = options + `<option value="${item.name}"> ${item.name}  </option>`
+        }
+        $("#room_no").html(options)
+      }
+    })
+    $("#login_allocate_room").submit(function (e) {
+      e.preventDefault();
+      var allocated = $("#allocated").val();
+      console.log(allocated);
+
+      var room_no = $("#room_no").val();
+      console.log(room_no);
+
+      var date = $("#date").val();
+      console.log(date)
+
+      var start_time = $("#start_time").val();
+      console.log(start_time)
+
+      var end_time = $("#end_time").val();
+      console.log(end_time)
+
+
+
+      $.ajax({
+        url: "http://127.0.0.1:5000/allocate_room",
+        type: "POST",
+        contentType: "application/json",
+        headers: { 'x-access-tokens': localStorage.getItem('token') },
+        data: JSON.stringify({ "allocated": allocated, "room_no": room_no, "date": date, "start_time": start_time, "end_time": end_time }),
+        success: function (data) {
+          var free_room = $("#room_no").val(); 
+           var status = $("#status").val();
+           console.log(status)
+          $.ajax({
+            url: `http://127.0.0.1:5000/room/${free_room}`,
+            type: "PUT",
+            contentType: "application/json",
+            headers: { 'x-access-tokens': localStorage.getItem('token') },
+            data: JSON.stringify({ "status": status }),
+            success: function (data) {
+              alert("Room Is Allocated");
+                console.log(data)
+
+            }
+          })
+
+
+          window.location.href = "/librarian",
+            console.log(data)
+
+        }
+      })
+
+
+
+
+    });
+  });  
+</script>
+
+
+
+
+
+{% endblock %}

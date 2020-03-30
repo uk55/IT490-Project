@@ -1,0 +1,95 @@
+{% extends 'header.html' %}
+
+{% block content %}
+        <h1 class="form-heading">Assign The Room</h1>
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h2>Please Assign The room</h2>
+                    <p>Please enter the room detail</p>
+                </div>
+                    <form id="Login">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="allocated" placeholder="allocated">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="room_no" placeholder="room_no">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="date" placeholder="date">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="start_time" placeholder="start_time">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="end_time" placeholder="end_time">
+                        </div>
+                        
+                            <button type="submit" class="btn btn-primary" id="send">Create Room</button>
+
+                            <a href="/availability">Room availability</a>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="main-div">
+                <div class="panel">
+                    <h2>Please Assign The room</h2>
+                    <p>Please enter the room detail</p>
+                </div>
+                    <form id="Login">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="allocated" placeholder="allocated">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="room_no" placeholder="room_no">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="date" placeholder="date">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="start_time" placeholder="start_time">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="end_time" placeholder="end_time">
+                        </div>
+                        
+                            <button type="submit" class="btn btn-primary" id="send">Create Room</button>
+
+                            <a href="/availability">Room availability</a>
+
+                    </form>
+                </div>
+            </div>
+
+
+        
+        </div>
+    </div>
+    <script type="text/javascript" >
+      $("document").ready(function(){
+          $("#send").click(function(){
+              var name = $("#name").val();
+              console.log (name); 
+      
+              var password = $("#password").val();
+              console.log(password);
+      
+                  $.ajax({
+                  url: "http://127.0.0.1:5000/login",
+                  type: "GET",
+                  contentType: "application/json",
+                  data: JSON.stringify({"name": name , "password":password})     
+                 }).done(function(data)
+                  {
+                  console.log(data);   
+                   }); 
+              });
+          });  
+      </script>
+
+      
+      {% endblock %}

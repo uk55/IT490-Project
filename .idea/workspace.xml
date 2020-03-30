@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front_end/templates/Assign_room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_end/templates/create_room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_end/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_end/templates/room_availability.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front_end/templates/student_dash.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/new_task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/receive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/sample.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/send.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/worker.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +49,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\front_end" />
+      <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\front_end\templates" />
+    </key>
   </component>
   <component name="RunManager" selected="Docker.docker-compose.yml.front_end: Compose Deployment">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
@@ -131,6 +153,9 @@
       <workItem from="1583767804171" duration="907000" />
       <workItem from="1583947946778" duration="1288000" />
       <workItem from="1583992086783" duration="2156000" />
+      <workItem from="1583996216016" duration="262000" />
+      <workItem from="1583996676314" duration="101000" />
+      <workItem from="1585526849494" duration="2218000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -195,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583762449022</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added the back_end path to the yml file">
+      <created>1583996439563</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583996439563</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +242,8 @@
     <MESSAGE value="RabbitMQ works on port 15672" />
     <MESSAGE value="Added flask code to require authentication in order to view the webpage." />
     <MESSAGE value="Added phpMyAdmin to yml file. ip:3306 for the server.&#10;user: root&#10;pass:changeme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added phpMyAdmin to yml file. ip:3306 for the server.&#10;user: root&#10;pass:changeme" />
+    <MESSAGE value="Added the back_end path to the yml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the back_end path to the yml file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="20" key="#Docker" timestamp="1582404499856">
@@ -226,19 +259,19 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583715656754" />
-    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1583762448485">
+    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1583996438447">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583544988036" />
+    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583996438447" />
     <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1583762448485" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="479" y="251" key="DockerComposeFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1581454235268" />
-    <state x="421" y="117" key="FileChooserDialogImpl" timestamp="1583015685052">
+    <state x="421" y="117" key="FileChooserDialogImpl" timestamp="1583996774081">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583015685052" />
+    <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583996774081" />
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581454233805" />
     <state x="142" y="4" key="SettingsEditor" timestamp="1583712093271">
       <screen x="0" y="0" width="1280" height="720" />
