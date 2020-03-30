@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/back_end/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +134,7 @@
       <workItem from="1583992086783" duration="2156000" />
       <workItem from="1583996216016" duration="262000" />
       <workItem from="1583996676314" duration="101000" />
-      <workItem from="1585526849494" duration="4467000" />
+      <workItem from="1585526849494" duration="5058000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
