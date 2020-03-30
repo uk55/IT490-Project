@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front_end/templates/Assign_room.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end/templates/create_room.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end/templates/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end/templates/room_availability.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front_end/templates/student_dash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/new_task.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/receive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/sample.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/send.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/welcome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/worker.py" beforeDir="false" />
-    </list>
+    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +134,7 @@
       <workItem from="1583992086783" duration="2156000" />
       <workItem from="1583996216016" duration="262000" />
       <workItem from="1583996676314" duration="101000" />
-      <workItem from="1585526849494" duration="2218000" />
+      <workItem from="1585526849494" duration="2668000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -227,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583996439563</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changed the frontend and added the files to create the frontend better.">
+      <created>1585529379282</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585529379282</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +229,8 @@
     <MESSAGE value="Added flask code to require authentication in order to view the webpage." />
     <MESSAGE value="Added phpMyAdmin to yml file. ip:3306 for the server.&#10;user: root&#10;pass:changeme" />
     <MESSAGE value="Added the back_end path to the yml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the back_end path to the yml file" />
+    <MESSAGE value="Changed the frontend and added the files to create the frontend better." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the frontend and added the files to create the frontend better." />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="20" key="#Docker" timestamp="1582404499856">
@@ -259,10 +246,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583715656754" />
-    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1583996438447">
+    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1585529378567">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583996438447" />
+    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1585529378567" />
     <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1583762448485" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
