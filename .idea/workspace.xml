@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front_end/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/static/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/static/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/Assign_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/Assign_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/create_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/create_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/room_availability.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/room_availability.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/student_dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/student_dash.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +141,7 @@
       <workItem from="1583992086783" duration="2156000" />
       <workItem from="1583996216016" duration="262000" />
       <workItem from="1583996676314" duration="101000" />
-      <workItem from="1585526849494" duration="8750000" />
+      <workItem from="1585526849494" duration="9740000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -263,10 +253,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583715656754" />
-    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1585529378567">
+    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1585539473839">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1585529378567" />
+    <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1585539473839" />
     <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1583762448485" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
