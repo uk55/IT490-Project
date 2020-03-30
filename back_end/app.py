@@ -5,8 +5,10 @@ import uuid
 import jwt
 from functools import wraps
 
+
 import datetime
 from flask_cors import CORS, cross_origin
+
 
 
 # from flask_jwt_extended import (JWTManager, jwt_required, create_access_token,get_jwt_claims)
@@ -272,7 +274,6 @@ def allocated_delete_room(current_user, room_no):
     db.session.commit()
 
     return jsonify({'message': 'Room deleted'})
-
 
 if __name__ == "__main__":
     db.init_app(app)
