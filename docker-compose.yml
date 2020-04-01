@@ -27,6 +27,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: user
       MYSQL_DATABASE: library
+
   messaging:
     image: "rabbitmq:3-management"
     networks:
@@ -35,6 +36,36 @@ services:
       RABBITMQ_DEFAULT_USER: example
       RABBITMQ_DEFAULT_PASS: meJvpzPsMkmTrc3g
       RABBITMQ_ERLANG_COOKIE: uDFReJY9e35DZZXL
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+
+  messaging2:
+    image: "rabbitmq:3-management"
+    hostname: messaging2
+    links:
+      - messaging
+    environment:
+      RABBITMQ_DEFAULT_USER: example
+      RABBITMQ_DEFAULT_PASS: meJvpzPsMkmTrc3g
+      RABBITMQ_ERLANG_COOKIE: uDFReJY9e35DZZXL
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  messaging3:
+    image: "rabbitmq:3-management"
+    hostname: messaging3
+    links:
+      - messaging
+      - messaging2
+    environment:
+      RABBITMQ_DEFAULT_USER: example
+      RABBITMQ_DEFAULT_PASS: meJvpzPsMkmTrc3g
+      RABBITMQ_ERLANG_COOKIE: uDFReJY9e35DZZXL
+    ports:
+      - "5673:5672"
+      - "15673:15672"
 
 networks:
   my_network:

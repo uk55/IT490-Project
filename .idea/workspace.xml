@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="Changed the frontend and added the files to create the frontend better.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,7 @@
       <workItem from="1583996676314" duration="101000" />
       <workItem from="1585526849494" duration="10177000" />
       <workItem from="1585590723083" duration="10000" />
-      <workItem from="1585700213717" duration="2626000" />
+      <workItem from="1585700213717" duration="6090000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
