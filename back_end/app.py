@@ -144,7 +144,7 @@ def login_user():
 
     return make_response('could not verify',  401, {'WWW.Authentication': 'Basic realm: "login required"'})
 
-
+#connecting to db to see if user exists
 @app.route('/users', methods=['GET'])
 def get_all_users():
 
@@ -159,11 +159,13 @@ def get_all_users():
         user_data['password'] = user.password
         user_data['admin'] = user.admin
 
+
         result.append(user_data)
 
     return jsonify({'users': result})
 
 
+#token required and create new room
 @app.route('/room', methods=['POST'])
 @token_required
 def create_room(current_user):
@@ -218,7 +220,7 @@ def get_rooms(current_user):
 def delete_room(current_user, room_id):
     room = Room.query.filter_by(id=room_id, user_id=current_user.id).first()
     if not room:
-        return jsonify({'message': 'room does not exist'})
+        return jsonify({'message': 'Room does NOT exist'})
 
     db.session.delete(room)
     db.session.commit()
@@ -236,8 +238,10 @@ def allocate_room(current_user):
                                date=data['date'], start_time=data['start_time'], end_time=data['end_time'])
     db.session.add(allocation)
 
+
 #    room = Room.query.filter_by(name='room_no').first()
 #    room.status = 'Occupied'
+
     db.session.commit()
 
     return jsonify({'message': 'allocated'})
