@@ -1,7 +1,9 @@
-from flask import Flask, render_template, redirect,url_for
+from flask import Flask, render_template, redirect,url_for,request
 
 import datetime
-
+import requests
+import pika
+# Configuration
 
 
 # from flask_jwt_extended import (JWTManager, jwt_required, create_access_token,get_jwt_claims)
@@ -33,7 +35,23 @@ def librarian_dash():
 def student_dash():
     return render_template("student_dash.html")
 
+@app.route("/send_msg" , methods =['GET','POST'])
+def send_msg():
+    return render_template("message.html")
 
+@app.route("/send_msg_stud" , methods =['GET','POST'])
+def send_msg_student():
+    return render_template("message_student.html")
+
+
+@app.route("/inbox")
+def inbox():
+    return render_template("inbox.html")
+
+
+@app.route("/sent_items")
+def sent_items():
+    return render_template("sent_items.html")
 
 @app.route("/signup_librarian")
 def signup_librarian():
@@ -61,6 +79,4 @@ def availability_room():
 
 if __name__ == "__main__":
 
-    app.run(debug=True, port=5000, host='0.0.0.0')
-
-
+    app.run(debug=True, port=3000, host='0.0.0.0')
