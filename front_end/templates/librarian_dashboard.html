@@ -84,6 +84,7 @@
                 data: JSON.stringify({ "msg": "Room is Free now" }),
                 success: function (data) {
                     fetch_allocated_room()
+                    alert("Room is Free Now!")
                     console.log(data)
 
                     var free_room = $("#free_room").val();
