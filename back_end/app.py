@@ -25,11 +25,10 @@ cors = CORS(app)
 db = SQLAlchemy()
 
 app.config['SECRET_KEY'] = 'Th1s1ss3cr3t'
-# app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///library.db'
-# local
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:sdp150516@localhost:3306/library'
+## local #
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:sdp150516@localhost:3306/library'
 # Prod
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:user@db:3306/library'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:user@db:3306/library'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
