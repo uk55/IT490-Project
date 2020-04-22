@@ -1,7 +1,7 @@
 {% extends 'header.html' %}
 
 {% block content %}
-<h1 class="form-heading">Librarian Registration Form</h1>
+<h1 class="form-heading">Registration Form</h1>
 <div class="login-form">
     <div class="main-div">
         <div class="panel">
@@ -24,7 +24,7 @@
             </div>
 
             <button type="submit" class="btn btn-primary" id="send">Register</button>
-            <a href="/">Already registered. Please Sign In</a>
+            <a href="/">Already registered</a>
 
         </form>
     </div>
@@ -43,17 +43,17 @@
             console.log(password);
 
             $.ajax({
-                url: "http://127.0.0.1:3000/register_librarian",
+                url: "http://127.0.0.1:5000/register_librarian",
                 type: "POST",
                 contentType: "application/json",
                 data: JSON.stringify({ "name": name, "password": password }),
                 success: function (data) {
                     window.location.href = "/",
-                    console.log(data);
+                        console.log(data);
                 }
 
             })
         });
-    });  
+    });
 </script>
 {% endblock %}

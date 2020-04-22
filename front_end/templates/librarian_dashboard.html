@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>Welcome Librarian</h1>
+<h1>Welcome Librarian {{ abc }} </h1>
 <br>
 
 <a href="/gen_room"><button class="btn btn-primary"> Add a Room </button></a>
@@ -20,13 +20,13 @@
 <h1>Appointed Room</h1>
 <table width="50%" border="1">
     <thead>
-        <tr>
-            <th>Name</th>
-            <th>Room No</th>
-            <th>Date</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-        </tr>
+    <tr>
+        <th>Allocated To:</th>
+        <th>Room No</th>
+        <th>Date</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+    </tr>
     </thead>
     <tbody id="tablebody">
 
@@ -44,7 +44,7 @@
 
         function fetch_allocated_room() {
             $.ajax({
-                url: "http://127.0.0.1:3000/allocate_rooms",
+                url: "http://127.0.0.1:5000/allocate_rooms",
                 type: "GET",
                 contentType: "application/json",
                 headers: { 'x-access-tokens': localStorage.getItem('token') },
@@ -55,7 +55,7 @@
 
 
                         tbody = tbody + `<tr>`;
-                        tbody = tbody + `<td>${item.allocated}</td>`;
+                        tbody = tbody + `<td>${item.name}</td>`;
                         tbody = tbody + `<td>${item.room_no}</td>`;
                         tbody = tbody + `<td>${item.date}</td>`;
                         tbody = tbody + `<td>${item.start_time}</td>`;
@@ -77,21 +77,21 @@
 
             var rom_no = $("#free_room").val();
             $.ajax({
-                url: `http://127.0.0.1:3000/free_rooms/${rom_no}`,
+                url: `http://127.0.0.1:5000/free_rooms/${rom_no}`,
                 type: "DELETE",
                 contentType: "application/json",
                 headers: { 'x-access-tokens': localStorage.getItem('token') },
                 data: JSON.stringify({ "msg": "Room is Free now" }),
                 success: function (data) {
                     fetch_allocated_room()
-                    alert("Room is Free Now!")
+                    alert("Room is free now ");
                     console.log(data)
 
                     var free_room = $("#free_room").val();
                     var status = $("#status").val();
                     console.log(status)
                     $.ajax({
-                        url: `http://127.0.0.1:3000/room/${free_room}`,
+                        url: `http://127.0.0.1:5000/room/${free_room}`,
                         type: "PUT",
                         contentType: "application/json",
                         headers: { 'x-access-tokens': localStorage.getItem('token') },
@@ -105,9 +105,9 @@
 
                 }
             })
-            
+
         });
-    });  
+    });
 </script>
 
 {% endblock %}

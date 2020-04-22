@@ -53,7 +53,7 @@
   $("document").ready(function () {
 
     $.ajax({
-      url: "http://127.0.0.1:3000/users",
+      url: "http://127.0.0.1:5000/users",
       type: "GET",
       contentType: "application/json",
       headers: { 'x-access-tokens': localStorage.getItem('token') },
@@ -62,14 +62,14 @@
         var options = "";
         for (item of res.users) {
           console.log(item)
-          options = options + `<option value="${item.name}"> ${item.name}  </option>`
+          options = options + `<option value="${item.public_id}"> ${item.name}  </option>`
         }
         $("#allocated").html(options)
       }
     })
 
     $.ajax({
-      url: "http://127.0.0.1:3000/rooms/empty",
+      url: "http://127.0.0.1:5000/rooms/empty",
       type: "GET",
       contentType: "application/json",
       headers: { 'x-access-tokens': localStorage.getItem('token') },
@@ -78,7 +78,7 @@
         var options = "";
         for (item of res.list_of_rooms) {
           console.log(item)
-          options = options + `<option value="${item.name}"> ${item.name}  </option>`
+          options = options + `<option value="${item.id}"> ${item.name}  </option>`
         }
         $("#room_no").html(options)
       }
@@ -103,31 +103,31 @@
 
 
       $.ajax({
-        url: "http://127.0.0.1:3000/allocate_room",
+        url: "http://127.0.0.1:5000/allocate_room",
         type: "POST",
         contentType: "application/json",
         headers: { 'x-access-tokens': localStorage.getItem('token') },
         data: JSON.stringify({ "allocated": allocated, "room_no": room_no, "date": date, "start_time": start_time, "end_time": end_time }),
         success: function (data) {
-          var free_room = $("#room_no").val(); 
-           var status = $("#status").val();
-           console.log(status)
+          var free_room = $("#room_no").val();
+          var status = $("#status").val();
+          console.log(status)
           $.ajax({
-            url: `http://127.0.0.1:3000/room/${free_room}`,
+            url: `http://127.0.0.1:5000/room/${free_room}`,
             type: "PUT",
             contentType: "application/json",
             headers: { 'x-access-tokens': localStorage.getItem('token') },
             data: JSON.stringify({ "status": status }),
             success: function (data) {
               alert("Room Is Allocated");
-                console.log(data)
+              console.log(data)
 
             }
           })
 
 
           window.location.href = "/librarian",
-            console.log(data)
+                  console.log(data)
 
         }
       })
@@ -136,7 +136,7 @@
 
 
     });
-  });  
+  });
 </script>
 
 

@@ -5,14 +5,14 @@
 <h1>Appointed Room</h1>
 <table width="50%" border="1">
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Room No</th>
-      <th>Date</th>
-      <th>Start Time</th>
-      <th>End Time</th>
-      <!-- <th><a onclick="timeNow(test1)" href="#">See The Remaining Time</a></th> -->
-    </tr>
+  <tr>
+    <th>Allocated_to:</th>
+    <th>Room No</th>
+    <th>Date</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+    <!-- <th><a onclick="timeNow(test1)" href="#">See The Remaining Time</a></th> -->
+  </tr>
   </thead>
   <tbody id="tablebody"></tbody>
 </table>
@@ -26,7 +26,7 @@
   }
   $("document").ready(function() {
     $.ajax({
-      url: "http://127.0.0.1:3000/allocate_rooms",
+      url: "http://127.0.0.1:5000/allocate_rooms_user",
       type: "GET",
       contentType: "application/json",
       headers: { "x-access-tokens": localStorage.getItem("token") },
@@ -35,7 +35,7 @@
         var tbody = "";
         for (item of res.list_of_allocations) {
           tbody = tbody + `<tr>`;
-          tbody = tbody + `<td>${item.allocated}</td>`;
+          tbody = tbody + `<td>${item.name}</td>`;
           tbody = tbody + `<td>${item.room_no}</td>`;
           tbody = tbody + `<td>${item.date}</td>`;
           tbody = tbody + `<td>${item.start_time}</td>`;

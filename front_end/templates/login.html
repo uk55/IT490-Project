@@ -13,20 +13,20 @@
       <div class="form-group">
 
 
-        <input type="text" class="form-control" id="name" placeholder="Email Address">
+        <input type="text" class="form-control" id="name" placeholder="Username" required>
 
       </div>
 
       <div class="form-group">
 
-        <input type="password" class="form-control" id="password" placeholder="Password">
+        <input type="password" class="form-control" id="password" placeholder="Password" required>
 
       </div>
-      
+
       <button type="submit" class="btn btn-primary" id="send">Login</button>
 
       <div class="forgot">
-        <a href="/signup">Sign Up/a>
+        <a href="/signup">I am a New User</a>
       </div>
 
     </form>
@@ -48,7 +48,7 @@
       var password = $("#password").val();
       console.log(password);
       $.ajax({
-        url: "http://127.0.0.1:3000/login",
+        url: "http://127.0.0.1:5000/login",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({ "username": username, "password": password }),
@@ -75,6 +75,6 @@
     }).join(''));
 
     return JSON.parse(jsonPayload);
-  };  
+  };
 </script>
 {% endblock %}

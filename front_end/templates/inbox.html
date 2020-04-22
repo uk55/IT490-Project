@@ -29,7 +29,7 @@
 
         function fetch_get_inbox() {
             $.ajax({
-                url: "http://127.0.0.1:3000/inbox",
+                url: "http://127.0.0.1:5000/inbox",
                 type: "GET",
                 contentType: "application/json",
                 headers: { 'x-access-tokens': localStorage.getItem('token') },
