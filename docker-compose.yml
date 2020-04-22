@@ -30,6 +30,7 @@ services:
 
   messaging:
     image: "rabbitmq:3-management"
+    restart: always
     networks:
       - my_network
     environment:
