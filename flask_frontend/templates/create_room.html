@@ -30,6 +30,8 @@
 </div>
 </div>
 <script type="text/javascript">
+  if (localStorage.getItem('token')) {
+
     $("document").ready(function () {
         $("#login").submit(function (e) {
             e.preventDefault();
@@ -45,13 +47,21 @@
                 success: function (data) {
                     alert("Room Has been Created");
                     window.location.href="/librarian",
-                        console.log(data)
+                    console.log(data)
+                },
+                error: function() {
+                    alert('Same Room Number already Created');
                 }
 
             })
 
         });
-    });
+    });  
+} else {
+    console.log("wonder");
+    window.location.href="/";
+
+}
 </script>
 
 {% endblock %}

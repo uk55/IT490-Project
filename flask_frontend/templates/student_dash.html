@@ -1,0 +1,107 @@
+{% extends 'header.html' %} {% block content %}
+
+<h1>Hey Welcome Student</h1>
+
+<div class="row">
+  <div class="column" >
+    <h3>Appointed Room</h3>
+<table width="70%" border="1">
+    <thead>
+        <tr>
+            <th>Allocated To:</th>
+            <th>Room No</th>
+            <th>Date</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+        </tr>
+    </thead>
+    <tbody id="tablebody">
+
+    </tbody>
+
+
+</table>
+  </div>
+  <div class="column1" >
+    <h3>Room which is available </h3>
+<table width="20%" border="1">
+    <thead>
+        <tr>
+            <th>Room No</th>
+        </tr>
+    </thead>
+    <tbody id="tablebody1">
+
+    </tbody>
+
+
+</table>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+if (localStorage.getItem('token')) {
+
+  function timeNow(i) {
+    i.value = new Date().toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+  }
+  $("document").ready(function() {
+    $.ajax({
+      url: "http://127.0.0.1:5000/allocate_rooms_user",
+      type: "GET",
+      contentType: "application/json",
+      headers: { "x-access-tokens": localStorage.getItem("token") },
+      success: function(res) {
+        console.log(res);
+        var tbody = "";
+        for (item of res.list_of_allocations) {
+          tbody = tbody + `<tr>`;
+          tbody = tbody + `<td>${item.name}</td>`;
+          tbody = tbody + `<td>${item.room_no}</td>`;
+          tbody = tbody + `<td>${item.date}</td>`;
+          tbody = tbody + `<td>${item.start_time}</td>`;
+          tbody = tbody + `<td>${item.end_time}</td>`;
+
+          tbody = tbody + `</tr>`;
+
+          console.log(item);
+        }
+        $("#tablebody").html(tbody);
+      }
+    });
+    $.ajax({
+                url: "http://127.0.0.1:5000/rooms/empty",
+                type: "GET",
+                contentType: "application/json",
+                headers: { 'x-access-tokens': localStorage.getItem('token') },
+                success: function (res) {
+                    console.log(res)
+                    var tbody = "";
+                    for (item of res.list_of_rooms) {
+
+
+                        tbody = tbody + `<tr>`;
+                        tbody = tbody + `<td>${item.name}</td>`;
+                        
+                        tbody = tbody + `</tr>`;
+                        console.log(item)
+                    }
+                    $("#tablebody1").html(tbody)
+
+                }
+
+            })
+  });
+} else {
+    console.log("wonder");
+    window.location.href="/";
+
+}
+</script>
+
+{% endblock %}

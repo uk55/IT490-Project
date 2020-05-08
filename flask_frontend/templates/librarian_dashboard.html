@@ -17,16 +17,24 @@
 </form>
 <br>
 <br>
-<h1>Appointed Room</h1>
-<table width="50%" border="1">
+
+
+<div >
+
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h3>Appointed Room</h3>
+<table width="70%" border="1">
     <thead>
-    <tr>
-        <th>Allocated To:</th>
-        <th>Room No</th>
-        <th>Date</th>
-        <th>Start Time</th>
-        <th>End Time</th>
-    </tr>
+        <tr>
+            <th>Allocated To:</th>
+            <th>Room No</th>
+            <th>Date</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+        </tr>
     </thead>
     <tbody id="tablebody">
 
@@ -34,11 +42,31 @@
 
 
 </table>
+  </div>
+  <div class="column1" >
+    <h3>Room which is available </h3>
+<table width="20%" border="1">
+    <thead>
+        <tr>
+            <th>Room No</th>
+        </tr>
+    </thead>
+    <tbody id="tablebody1">
+
+    </tbody>
+
+
+</table>
+  </div>
+</div>
 
 
 
 
 <script type="text/javascript">
+
+if (localStorage.getItem('token')) {
+    
     $("document").ready(function () {
         fetch_allocated_room()
 
@@ -70,6 +98,28 @@
                 }
 
             })
+            $.ajax({
+                url: "http://127.0.0.1:5000/rooms/empty",
+                type: "GET",
+                contentType: "application/json",
+                headers: { 'x-access-tokens': localStorage.getItem('token') },
+                success: function (res) {
+                    console.log(res)
+                    var tbody = "";
+                    for (item of res.list_of_rooms) {
+
+
+                        tbody = tbody + `<tr>`;
+                        tbody = tbody + `<td>${item.name}</td>`;
+                        
+                        tbody = tbody + `</tr>`;
+                        console.log(item)
+                    }
+                    $("#tablebody1").html(tbody)
+
+                }
+
+            })
         }
 
         $("#free_form").submit(function (e) {
@@ -86,28 +136,17 @@
                     fetch_allocated_room()
                     alert("Room is free now ");
                     console.log(data)
-
-                    var free_room = $("#free_room").val();
-                    var status = $("#status").val();
-                    console.log(status)
-                    $.ajax({
-                        url: `http://127.0.0.1:5000/room/${free_room}`,
-                        type: "PUT",
-                        contentType: "application/json",
-                        headers: { 'x-access-tokens': localStorage.getItem('token') },
-                        data: JSON.stringify({ "status": status }),
-                        success: function (data) {
-                            alert("Room Is Allocated");
-                            console.log(data)
-
-                        }
-                    })
-
                 }
-            })
 
+            })
+            
         });
-    });
+    });  
+} else {
+    console.log("wonder");
+    window.location.href="/";
+
+}
 </script>
 
 {% endblock %}

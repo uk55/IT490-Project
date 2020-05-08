@@ -2,23 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="Changed the frontend and added the files to create the frontend better.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/receive.py" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/receive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/static/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/back_end/static/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/static/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/static/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/Assign_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/Assign_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/create_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/create_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/inbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/message.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/message.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/message_student.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/message_student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/room_availability.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/room_availability.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/sent_items.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/sent_items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/student_dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/front_end/templates/student_dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/receive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/static/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/static/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back_end/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/static/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/static/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/Assign_room.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/create_room.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/inbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/message_student.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/room_availability.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/sent_items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_end/templates/student_dash.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +38,13 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="IT490-Project" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,8 +62,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/library-master" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -166,7 +185,17 @@
       <workItem from="1587331092438" duration="45000" />
       <workItem from="1587331934158" duration="1434000" />
       <workItem from="1587523054546" duration="5144000" />
-      <workItem from="1587575680103" duration="7989000" />
+      <workItem from="1587575680103" duration="9475000" />
+      <workItem from="1588098562194" duration="914000" />
+      <workItem from="1588100534060" duration="1212000" />
+      <workItem from="1588102374533" duration="3721000" />
+      <workItem from="1588291303525" duration="1666000" />
+      <workItem from="1588606431186" duration="4493000" />
+      <workItem from="1588648024410" duration="221000" />
+      <workItem from="1588792109889" duration="2053000" />
+      <workItem from="1588794577144" duration="894000" />
+      <workItem from="1588905340084" duration="227000" />
+      <workItem from="1588955445648" duration="3524000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -287,15 +316,15 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="479" y="251" key="DockerComposeFileDialog/0.0.1280.720@0.0.1280.720" timestamp="1581454235268" />
-    <state x="421" y="117" key="FileChooserDialogImpl" timestamp="1583996774081">
+    <state x="421" y="117" key="FileChooserDialogImpl" timestamp="1588609376469">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583996774081" />
+    <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1588609376469" />
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581454233805" />
-    <state x="142" y="4" key="SettingsEditor" timestamp="1583712093271">
+    <state x="142" y="4" key="SettingsEditor" timestamp="1588794276324">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="142" y="4" key="SettingsEditor/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583712093271" />
+    <state x="142" y="4" key="SettingsEditor/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1588794276324" />
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583195829772">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

@@ -33,11 +33,17 @@
         <input type="date" class="form-control" id="date" name="date">
       </div>
       <div class="form-group">
-        <input type="text" class="form-control" id="start_time" placeholder="start_time">
+        <select id="start_time" name="start_time">
+          <option value="t1">Select Start time</option>
+          <option value=""></option>
+        </select>
       </div>
       <div class="form-group">
-        <input type="text" class="form-control" id="end_time" placeholder="end_time">
-        <input type="hidden" id="status" value="occupied">
+        <select id="end_time" name="end_time">
+          <option value="t1">Select End time</option>
+          <option value=""></option>
+        </select>
+        
       </div>
 
       <button type="submit" class="btn btn-primary" id="send">Create Room</button>
@@ -50,6 +56,30 @@
 </div>
 </div>
 <script type="text/javascript">
+
+if (localStorage.getItem('token')) {
+  function populate(selector) {
+    var select = $(selector);
+    var hours, minutes, ampm;
+    for(var i = 0; i <= 1450; i += 15){
+        hours = Math.floor(i / 60);
+        minutes = i % 60;
+        if (minutes < 10){
+            minutes = '0' + minutes; // adding leading zero
+        }
+        ampm = hours % 24 < 12 ? 'AM' : 'PM';
+        hours = hours % 12;
+        if (hours === 0){
+            hours = 12;
+        }
+        select.append($('<option></option>')
+            .attr('value', hours + ':' + minutes + ' ' + ampm)
+            .text(hours + ':' + minutes + ' ' + ampm)); 
+    }
+}
+populate('#end_time');
+populate('#start_time');
+
   $("document").ready(function () {
 
     $.ajax({
@@ -100,8 +130,6 @@
       var end_time = $("#end_time").val();
       console.log(end_time)
 
-
-
       $.ajax({
         url: "http://127.0.0.1:5000/allocate_room",
         type: "POST",
@@ -109,38 +137,26 @@
         headers: { 'x-access-tokens': localStorage.getItem('token') },
         data: JSON.stringify({ "allocated": allocated, "room_no": room_no, "date": date, "start_time": start_time, "end_time": end_time }),
         success: function (data) {
-          var free_room = $("#room_no").val();
-          var status = $("#status").val();
-          console.log(status)
-          $.ajax({
-            url: `http://127.0.0.1:5000/room/${free_room}`,
-            type: "PUT",
-            contentType: "application/json",
-            headers: { 'x-access-tokens': localStorage.getItem('token') },
-            data: JSON.stringify({ "status": status }),
-            success: function (data) {
-              alert("Room Is Allocated");
-              console.log(data)
+           alert("The Room is successfully allocated")
+           console.log(status)
+            window.location.href = "/librarian",
+            console.log(data)
 
-            }
-          })
-
-
-          window.location.href = "/librarian",
-                  console.log(data)
-
+        },
+        error: function() {
+            alert('Please check This room no. or User has already alloted the room ');
         }
       })
 
 
-
-
     });
-  });
+  });  
+} else {
+    console.log("wonder");
+    window.location.href="/";
+
+}
 </script>
-
-
-
 
 
 {% endblock %}

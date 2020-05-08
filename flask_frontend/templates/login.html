@@ -12,7 +12,7 @@
 
       <div class="form-group">
 
-
+        <i class="fa fa-user"></i>
         <input type="text" class="form-control" id="name" placeholder="Username" required>
 
       </div>
@@ -22,7 +22,7 @@
         <input type="password" class="form-control" id="password" placeholder="Password" required>
 
       </div>
-
+      
       <button type="submit" class="btn btn-primary" id="send">Login</button>
 
       <div class="forgot">
@@ -62,9 +62,14 @@
           else {
             window.location.href = "/student_dash"
           }
-
+        },
+        error: function() {
+            alert('Please check your Username and Password');
         }
+        
       });
+      
+      
     });
   });
   function parseJwt(token) {
@@ -75,6 +80,6 @@
     }).join(''));
 
     return JSON.parse(jsonPayload);
-  };
+  };  
 </script>
 {% endblock %}

@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, make_response, render_template, flash, redirect, url_for, session, logging, request
+from flask import Flask,flash, request, jsonify, make_response, render_template, flash, redirect, url_for, session, logging, request
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 import uuid
@@ -8,6 +8,7 @@ from flask import session
 import datetime
 from flask_cors import CORS, cross_origin
 import pika
+import os
 
 
 now = datetime.datetime.utcnow()
@@ -26,11 +27,12 @@ db = SQLAlchemy()
 
 app.config['SECRET_KEY'] = 'Th1s1ss3cr3t'
 ## local #
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:sdp150516@localhost:3306/library'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:sdp150516@localhost:3306/library'
+### prod ##
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/library'
 # Prod
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:user@db:3306/library'
-
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# db_host = os.environ["DB_HOST"]
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:user@{}:3306/library'.format(db_host)
 
 
 @app.before_first_request
@@ -42,9 +44,10 @@ def createTable():
 class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     public_id = db.Column(db.String(70))
-    name = db.Column(db.String(50))
+    name = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(200))
     admin = db.Column(db.Boolean)
+
 
 class Room(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -64,20 +67,22 @@ class Room(db.Model):
 
 class Allocate_room(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    allocated = db.Column(db.Integer, db.ForeignKey('users.id'),nullable=False)
-    room_no = db.Column(db.Integer, db.ForeignKey('room.id'),nullable=False)
+    allocated = db.Column(
+        db.Integer, db.ForeignKey('users.id'), unique=True, nullable=False)
+    room_no = db.Column(db.Integer, db.ForeignKey('room.id'),unique=True, nullable=False)
     date = db.Column(db.String(50),  nullable=False)
     start_time = db.Column(db.String(50), nullable=False)
     end_time = db.Column(db.String(50), nullable=False)
-    allocated_by = db.Column(db.Integer, db.ForeignKey('users.id'),nullable=False)
+    allocated_by = db.Column(
+        db.Integer, db.ForeignKey('users.id'), nullable=False)
 
 
 class Contact_us(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    send_to = db.Column(db.Integer, db.ForeignKey('users.id'),nullable=False)
+    send_to = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     message = db.Column(db.String(10050), nullable=False)
-    sended_by = db.Column(db.Integer, db.ForeignKey('users.id'),nullable=False)
-
+    sended_by = db.Column(
+        db.Integer, db.ForeignKey('users.id'), nullable=False)
 
 
 def token_required(f):
@@ -131,6 +136,10 @@ def signup_user():
     db.session.add(new_user)
     db.session.commit()
 
+    # if name and password:
+    #     Newname = name[::-1]
+    #     return jsonify({'name':Newname})
+
     return jsonify({'message': 'registered successfully'})
 
 
@@ -163,25 +172,23 @@ def login_user():
     return make_response('could not verify',  401, {'WWW.Authentication': 'Basic realm: "login required"'})
 
 
-
-
 @app.route('/users', methods=['GET'])
 @token_required
 def get_all_users(current_user):
-   users = Users.query.filter_by(admin="0").all()
-   result = []
+    users = Users.query.filter_by(admin="0").all()
+    result = []
 
+    for user in users:
+        user_data = {}
+        user_data['public_id'] = user.id
+        user_data['name'] = user.name
+        user_data['password'] = user.password
+        user_data['admin'] = user.admin
 
-   for user in users:
-       user_data = {}
-       user_data['public_id'] = user.id
-       user_data['name'] = user.name
-       user_data['password'] = user.password
-       user_data['admin'] = user.admin
+        result.append(user_data)
 
-       result.append(user_data)
+    return jsonify({'users': result})
 
-   return jsonify({'users': result})
 
 @app.route('/users_admin', methods=['GET'])
 @token_required
@@ -217,11 +224,11 @@ def create_room(current_user):
     return jsonify({'message': 'new room created'})
 
 
-@app.route('/room/<name>', methods=['PUT'])
+@app.route('/room/<id>', methods=['PUT'])
 @token_required
-def update_room(name):
+def update_room(current_user,id):
     room = request.get_json()
-    get_room = Room.query.filter_by(name=name).first()
+    get_room = Room.query.filter_by(id=id).first()
 
     if room.get('status'):
         get_room.status = room['status']
@@ -239,7 +246,7 @@ def update_room(name):
 def get_rooms(current_user):
     rooms = Room.query.filter_by(status="empty").all()
 
-    output = []
+    list_of_rooms = []
     for room in rooms:
 
         room_data = {}
@@ -247,11 +254,9 @@ def get_rooms(current_user):
         room_data['name'] = room.name
         room_data['purpose'] = room.purpose
         room_data['status'] = room.status
-        output.append(room_data)
+        list_of_rooms.append(room_data)
 
-    return jsonify({'list_of_rooms' : output})
-
-
+    return jsonify({'list_of_rooms': list_of_rooms})
 
 
 @app.route('/rooms/<room_id>', methods=['DELETE'])
@@ -270,16 +275,23 @@ def delete_room(room_id):
 @app.route('/allocate_room', methods=['POST'])
 @token_required
 def allocate_room(current_user):
-    a= current_user.id
+    a = current_user.id
     print(a)
     data = request.get_json()
-
+    
     allocation = Allocate_room(allocated=data['allocated'], room_no=data['room_no'],
-                               date=data['date'], start_time=data['start_time'], end_time=data['end_time'],allocated_by=a)
-    db.session.add(allocation)
+                               date=data['date'], start_time=data['start_time'], end_time=data['end_time'], allocated_by=a)
+    print("$$$%%^^^%$#$%^&^%$#@#$%%$#")
+    allocated_room = allocation.room_no
+    print(allocated_room)
 
-    # room = Room.query.filter_by(name='room_no').first()
-    # room.status = 'Occupied'
+    room = Room.query.filter_by(id = allocated_room).first()
+    if room :
+        room.status = "Occupied"
+    else:
+        print("room is already occupied")
+
+    db.session.add(allocation)
     db.session.commit()
 
     return jsonify({'message': 'allocated'})
@@ -288,9 +300,10 @@ def allocate_room(current_user):
 @app.route('/allocate_rooms', methods=['GET'])
 @token_required
 def get_allocated(current_user):
-    a= current_user.id
+    a = current_user.id
     # allocate_room = Allocate_room.query.filter_by(allocated_by=a).all()
-    allocate_room = Allocate_room.query.join(Users,Allocate_room.allocated==Users.id).add_columns(Users.name,Allocate_room.allocated,Allocate_room.room_no,Allocate_room.date,Allocate_room.start_time,Allocate_room.end_time).filter(Allocate_room.allocated_by==a).all()
+    allocate_room = Allocate_room.query.join(Users, Allocate_room.allocated == Users.id).add_columns(
+        Users.name, Allocate_room.allocated, Allocate_room.room_no, Allocate_room.date, Allocate_room.start_time, Allocate_room.end_time).filter(Allocate_room.allocated_by == a).all()
 
     list_of_allocations = []
     for room in allocate_room:
@@ -311,9 +324,10 @@ def get_allocated(current_user):
 @app.route('/allocate_rooms_user', methods=['GET'])
 @token_required
 def get_allocated_user(current_user):
-    a= current_user.id
+    a = current_user.id
     # allocate_room = Allocate_room.query.filter_by(allocated_by=a).all()
-    allocate_room = Allocate_room.query.join(Users,Allocate_room.allocated==Users.id).add_columns(Users.name,Allocate_room.allocated,Allocate_room.room_no,Allocate_room.date,Allocate_room.start_time,Allocate_room.end_time).all()
+    allocate_room = Allocate_room.query.join(Users, Allocate_room.allocated == Users.id).add_columns(
+        Users.name, Allocate_room.allocated, Allocate_room.room_no, Allocate_room.date, Allocate_room.start_time, Allocate_room.end_time).all()
 
     list_of_allocations = []
     for room in allocate_room:
@@ -333,11 +347,19 @@ def get_allocated_user(current_user):
 
 @app.route('/free_rooms/<room_no>', methods=['DELETE'])
 @token_required
-def allocated_delete_room(current_user,room_no):
+def allocated_delete_room(current_user, room_no):
 
     room = Allocate_room.query.filter_by(room_no=room_no).first()
     if not room:
         return jsonify({'message': 'room does not exist'})
+    
+    
+    room12 = Room.query.filter_by(id = room_no).first()
+    if room12 :
+        room12.status = "empty"
+    else:
+        print("room is already occupied")
+    
 
     db.session.delete(room)
     db.session.commit()
@@ -350,17 +372,27 @@ def allocated_delete_room(current_user,room_no):
 def create_contact(current_user):
     data = request.get_json()
     message = data['message']
-    new_message = Contact_us(send_to=data['send_to'],message=data['message'],sended_by=current_user.id)
+    new_message = Contact_us(
+        send_to=data['send_to'], message=data['message'], sended_by=current_user.id)
 
-    connection = pika.BlockingConnection(pika.ConnectionParameters(
-                    'localhost'))
+    # dev
+    # connection = pika.BlockingConnection(pika.ConnectionParameters(
+    #     'localhost'))
+
+    # prod
+    rabbitmq_host = os.environ["RABBITMQ_HOST"]
+    rabbitmq_user = os.environ["RABBITMQ_USER"]
+    rabbitmq_password = os.environ["RABBITMQ_PASSWORD"]
+    credentials = pika.PlainCredentials(rabbitmq_user, rabbitmq_password)
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host=rabbitmq_host, credentials=credentials))
+        
     channel = connection.channel()
 
     channel.queue_declare(queue='queuename')
 
     channel.basic_publish(exchange='',
-                            routing_key='queuename',
-                            body=str(message))
+                          routing_key='queuename',
+                          body=str(message))
     print(" [x] Sent 'Rabbit Message'")
 
     connection.close()
@@ -376,7 +408,8 @@ def create_contact(current_user):
 def get_inbox(current_user):
     a = current_user.id
     print(a)
-    contacts = Contact_us.query.join(Users,Contact_us.sended_by==Users.id).add_columns(Users.name,Contact_us.send_to,Contact_us.message,Contact_us.sended_by).filter(Contact_us.send_to==a).all()
+    contacts = Contact_us.query.join(Users, Contact_us.sended_by == Users.id).add_columns(
+        Users.name, Contact_us.send_to, Contact_us.message, Contact_us.sended_by).filter(Contact_us.send_to == a).all()
 
     # contacts = Contact_us.query.join(Contact_us).filter_by(Contact_us.send_to==Users.id).all()
 
@@ -387,7 +420,7 @@ def get_inbox(current_user):
         contact_msg_data['send_to'] = contact_msg.send_to
         contact_msg_data['message'] = contact_msg.message
         contact_msg_data['sended_by'] = contact_msg.sended_by
-        contact_msg_data['name']= contact_msg.name
+        contact_msg_data['name'] = contact_msg.name
 
         result.append(contact_msg_data)
         print("all messages")
@@ -400,7 +433,8 @@ def get_inbox(current_user):
 @token_required
 def get_outbox(current_user):
     a = current_user.id
-    contacts = Contact_us.query.join(Users,Contact_us.send_to==Users.id).add_columns(Users.name,Contact_us.send_to,Contact_us.message,Contact_us.sended_by).filter(Contact_us.sended_by==a).all()
+    contacts = Contact_us.query.join(Users, Contact_us.send_to == Users.id).add_columns(
+        Users.name, Contact_us.send_to, Contact_us.message, Contact_us.sended_by).filter(Contact_us.sended_by == a).all()
 
     result = []
 
@@ -409,31 +443,13 @@ def get_outbox(current_user):
         contact_msg_data['send_to'] = contact_msg.send_to
         contact_msg_data['message'] = contact_msg.message
         contact_msg_data['sended_by'] = contact_msg.sended_by
-        contact_msg_data['name']= contact_msg.name
-
+        contact_msg_data['name'] = contact_msg.name
 
         result.append(contact_msg_data)
         print("all messages")
         print(result)
 
     return jsonify({'result': result})
-
-
-# @app.route('/contacts/<contact_id>', methods=['DELETE'])
-# @token_required
-# def delete_contact(current_user, contact_id):
-#     contact = Contact_us.query.filter_by(id=contact_id).first()
-#     if not contact:
-#         return jsonify({'message': 'Message not exist'})
-
-#     db.session.delete(contact)
-#     db.session.commit()
-
-#     return jsonify({'message': 'Message deleted'})
-
-
-
-
 
 if __name__ == "__main__":
     db.init_app(app)

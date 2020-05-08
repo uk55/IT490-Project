@@ -3,6 +3,8 @@ from flask import Flask, render_template, redirect,url_for,request
 import datetime
 import requests
 import pika
+import jwt
+from functools import wraps
 # Configuration
 
 
@@ -31,9 +33,15 @@ def logout():
 def librarian_dash():
     return render_template("librarian_dashboard.html")
 
+
+@app.route("/eror404")
+def error_404():
+    return render_template("404.html")
+
 @app.route("/student_dash")
 def student_dash():
     return render_template("student_dash.html")
+
 
 @app.route("/send_msg" , methods =['GET','POST'])
 def send_msg():
@@ -42,6 +50,7 @@ def send_msg():
 @app.route("/send_msg_stud" , methods =['GET','POST'])
 def send_msg_student():
     return render_template("message_student.html")
+
 
 
 @app.route("/inbox")
@@ -80,3 +89,4 @@ def availability_room():
 if __name__ == "__main__":
 
     app.run(debug=True, port=3000, host='0.0.0.0')
+
