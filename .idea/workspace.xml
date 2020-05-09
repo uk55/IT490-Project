@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="Changed the frontend and added the files to create the frontend better.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/registration_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/registration_librarian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/student_dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/student_dash.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +174,7 @@
       <workItem from="1588905340084" duration="227000" />
       <workItem from="1588955445648" duration="3524000" />
       <workItem from="1588965471809" duration="1358000" />
-      <workItem from="1589039639242" duration="1678000" />
+      <workItem from="1589039639242" duration="3525000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>

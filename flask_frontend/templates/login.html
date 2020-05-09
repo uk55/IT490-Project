@@ -1,12 +1,27 @@
 {% extends 'header.html' %}
 
 {% block content %}
-<h1 class="form-heading">login Form</h1>
+
+<html>
+<head>
+  <title> IT 490 - Library App</title>
+</head>
+
+<h1>Welcome to IT 490 Class</h1>
+<h5><b><i>Note:</i></b> Please register a new user first.<br>
+Then Login with the same credentials. You will get error if you enter wrong username or password.<br>
+  You will also get error if you register a user that has the same username. <br>
+  The Librarian Registration is different because it gives access to the main website. <br>
+  The librarian can add and delete rooms and send messages as well.
+</h5>
+<div style="text-align: center">
+<h1 class="form-heading">Login Form</h1>
+
 <div class="login-form">
   <div class="main-div">
     <div class="panel">
       <h2>Login</h2>
-      <p>Please enter your email and password</p>
+      <p>Please enter your Username and Password</p>
     </div>
     <form id="login">
 
@@ -34,8 +49,9 @@
 </div>
 </div>
 </div>
+</div>
 <div id="result"></div>
-
+</html>
 
 
 <script type="text/javascript">
