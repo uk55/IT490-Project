@@ -4,32 +4,7 @@
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="Changed the frontend and added the files to create the frontend better.">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/receive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/static/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/static/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back_end/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/static/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/static/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/Assign_room.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/create_room.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/inbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/librarian_dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/message.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/message_student.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/registration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/registration_librarian.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/room_availability.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/sent_items.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front_end/templates/student_dash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_backend/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +37,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/library-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="Docker" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -196,6 +171,8 @@
       <workItem from="1588794577144" duration="894000" />
       <workItem from="1588905340084" duration="227000" />
       <workItem from="1588955445648" duration="3524000" />
+      <workItem from="1588965471809" duration="1358000" />
+      <workItem from="1589039639242" duration="1678000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -321,18 +298,18 @@
     </state>
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1588609376469" />
     <state x="421" y="117" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581454233805" />
-    <state x="142" y="4" key="SettingsEditor" timestamp="1588794276324">
+    <state x="142" y="4" key="SettingsEditor" timestamp="1588967834819">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="142" y="4" key="SettingsEditor/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1588794276324" />
-    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583195829772">
+    <state x="142" y="4" key="SettingsEditor/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1588967834819" />
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588968032079">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583195829772" />
+    <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1588968032079" />
     <state x="450" y="279" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1583170524392" />
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1583471414624">
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1589040283671">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583471414624" />
+    <state x="303" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1589040283671" />
   </component>
 </project>

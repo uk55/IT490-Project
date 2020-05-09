@@ -27,12 +27,12 @@ db = SQLAlchemy()
 
 app.config['SECRET_KEY'] = 'Th1s1ss3cr3t'
 ## local #
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:sdp150516@localhost:3306/library'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:sdp150516@localhost:3306/library'
 ### prod ##
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/library'
 # Prod
-# db_host = os.environ["DB_HOST"]
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:user@{}:3306/library'.format(db_host)
+db_host = os.environ["DB_HOST"]
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:user@{}:3306/library'.format(db_host)
 
 
 @app.before_first_request
