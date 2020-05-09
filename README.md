@@ -10,6 +10,19 @@ for hours in line. Users can login, register/reserve the next available
 
 
 #############################
+First Login:
+ Student Regitraion
+ or
+ Librarian Regigration
+* Both have different accessiblity.
+
+Login Page is the same. Once Registered successfully, you will be brought to the
+login page once you click the "OK" on thr prompt. 
+Depending on who you registered as, you will be brought to the correct web page to
+view the rooms and messaging.
+
+
+#############################
 # For Build
 
 cd flask_backend/
