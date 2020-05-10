@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,7 +175,7 @@
       <workItem from="1589086474188" duration="3865000" />
       <workItem from="1589148257775" duration="908000" />
       <workItem from="1589149443529" duration="605000" />
-      <workItem from="1589151275098" duration="2309000" />
+      <workItem from="1589151275098" duration="2475000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -284,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589153148186</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added more notes for better instuctions">
+      <created>1589153787732</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589153787732</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +308,8 @@
     <MESSAGE value="Changed the frontend and added the files to create the frontend better." />
     <MESSAGE value="added deployemtn database" />
     <MESSAGE value="changed templates how they look for better readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed templates how they look for better readability" />
+    <MESSAGE value="Added more notes for better instuctions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more notes for better instuctions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="20" key="#Docker" timestamp="1582404499856">
@@ -319,12 +325,12 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583715656754" />
-    <state x="496" y="0" key="CommitChangelistDialog2" timestamp="1589153164335">
+    <state x="496" y="0" key="CommitChangelistDialog2" timestamp="1589153786109">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1585701185721" />
     <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1583762448485" />
-    <state x="496" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589153164335" />
+    <state x="496" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589153786109" />
     <state x="465" y="23" key="CommitChangelistDialog2/0.23.1440.837@0.23.1440.837" timestamp="1589150181967" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
