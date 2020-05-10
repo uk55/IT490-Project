@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/flask_backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_backend/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/messaging-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/messaging-k8s.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,12 +110,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -177,6 +172,7 @@
       <workItem from="1589086474188" duration="3865000" />
       <workItem from="1589148257775" duration="908000" />
       <workItem from="1589149443529" duration="605000" />
+      <workItem from="1589151275098" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>

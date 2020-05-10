@@ -1,11 +1,11 @@
 #Professor's Code form github rxt1077/it490
+#Mesaging deployment and services
 #tag::rbac[]
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: messaging
-
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: Role
@@ -30,10 +30,12 @@ roleRef:
   name: rabbitmq-peer-discovery-rbac
 #end::rbac[]
 
-#tag::configmap[]
 ---
+#tag::configmap[]
+
 apiVersion: v1
 kind: ConfigMap
+
 metadata:
   name: rabbitmq-config
 data:
@@ -121,4 +123,6 @@ spec:
                 path: rabbitmq.conf
               - key: enabled_plugins
                 path: enabled_plugins
+
 #end::statefulset[]
+
