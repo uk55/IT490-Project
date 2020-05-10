@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="Changed the frontend and added the files to create the frontend better.">
+      <change afterPath="$PROJECT_DIR$/back-end-k8s.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-k8s.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_frontend/messaging.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end-k8s.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/messaging-k8s.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/registration_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/registration_librarian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/student_dash.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/student_dash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sagar\Desktop\IT490-Project" />
       <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\front_end\templates" />
       <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\back_end" />
       <recent name="C:\Users\sagar\WebstormProjects\it490\IT490-Project\front_end" />
@@ -174,7 +177,10 @@
       <workItem from="1588905340084" duration="227000" />
       <workItem from="1588955445648" duration="3524000" />
       <workItem from="1588965471809" duration="1358000" />
-      <workItem from="1589039639242" duration="3525000" />
+      <workItem from="1589039639242" duration="3936000" />
+      <workItem from="1589044838299" duration="842000" />
+      <workItem from="1589051053324" duration="6105000" />
+      <workItem from="1589086474188" duration="3865000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -277,10 +283,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="232" y="20" key="#Docker/0.0.1280.720@0.0.1280.720" timestamp="1582404499856" />
-    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585534428015">
+    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589045678048">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1585534428015" />
+    <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1589045678048" />
     <state x="95" y="17" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1582404801299" />
     <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583715656754">
       <screen x="0" y="0" width="1280" height="720" />

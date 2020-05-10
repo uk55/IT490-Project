@@ -41,6 +41,8 @@ services:
       RABBITMQ_DEFAULT_USER: example
       RABBITMQ_DEFAULT_PASS: meJvpzPsMkmTrc3g
       RABBITMQ_ERLANG_COOKIE: uDFReJY9e35DZZXL
+    ports:
+      - '15672:15672'
 
 networks:
   my_network:
