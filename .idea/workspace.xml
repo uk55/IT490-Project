@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/registration_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/registration_librarian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_backend/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +176,7 @@
       <workItem from="1589051053324" duration="6105000" />
       <workItem from="1589086474188" duration="3865000" />
       <workItem from="1589148257775" duration="908000" />
-      <workItem from="1589149443529" duration="257000" />
+      <workItem from="1589149443529" duration="605000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589149557247</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="changed templates how they look for better readability">
+      <created>1589149729698</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589149729698</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +287,8 @@
     <MESSAGE value="Added the back_end path to the yml file" />
     <MESSAGE value="Changed the frontend and added the files to create the frontend better." />
     <MESSAGE value="added deployemtn database" />
-    <option name="LAST_COMMIT_MESSAGE" value="added deployemtn database" />
+    <MESSAGE value="changed templates how they look for better readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed templates how they look for better readability" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="20" key="#Docker" timestamp="1582404499856">

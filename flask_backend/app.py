@@ -34,13 +34,13 @@ app.config['SECRET_KEY'] = 'Th1s1ss3cr3t'
 db_host = os.environ["DB_HOST"]
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:user@{}:3306/library'.format(db_host)
 
-
+#Creating a database
 @app.before_first_request
 def createTable():
     db.create_all()
     db.session.commit()
 
-
+#user database with admin access
 class Users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     public_id = db.Column(db.String(70))
@@ -48,7 +48,7 @@ class Users(db.Model):
     password = db.Column(db.String(200))
     admin = db.Column(db.Boolean)
 
-
+# the room database coloumn
 class Room(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), unique=True, nullable=False)
@@ -64,7 +64,8 @@ class Room(db.Model):
             'id': self.id,
         }
 
-
+#assigning room to users to store room's data
+#room data will be stored here
 class Allocate_room(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     allocated = db.Column(
@@ -76,7 +77,8 @@ class Allocate_room(db.Model):
     allocated_by = db.Column(
         db.Integer, db.ForeignKey('users.id'), nullable=False)
 
-
+#the contact form database
+#sending and receiving message.
 class Contact_us(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     send_to = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
@@ -124,7 +126,7 @@ def token_required(f):
         return f(current_user, *args, **kwargs)
     return decorator
 
-
+#bring in data for creating users.
 @app.route('/register', methods=['POST'])
 def signup_user():
     data = request.get_json()
