@@ -22,6 +22,13 @@ Depending on who you registered as, you will be brought to the correct web page 
 view the rooms and messaging.
 
 
+Messaging: 
+  To view the messaging part of our web app, you will need to create more than 1 users.
+  Because in order to send message you need someone on the database.
+  Once you register a user, login and select the other person in the drop down list.
+  You'll be able to send message. 
+
+
 #############################
 # For Build
 
