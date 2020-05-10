@@ -28,6 +28,13 @@ Messaging:
   Once you register a user, login and select the other person in the drop down list.
   You'll be able to send message. 
 
+Database Librarian:
+    Admin or Librarian: Librarian can creeate room and allocate room to selected user.
+    They can free the room as well. Once user checks out, the librarian can checkout students.
+    THis will free thr room. The room will be assigned by room number but to free room you need
+    to enter the number shown under the appointed room. 
+    User/Student will be able to see the rooms that are free and rooms which are allocated. 
+    
 
 #############################
 # For Build
