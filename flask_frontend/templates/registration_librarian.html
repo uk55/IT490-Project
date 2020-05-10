@@ -58,12 +58,12 @@
                 contentType: "application/json",
                 data: JSON.stringify({ "name": name, "password": password }),
                 success: function (data) {
-                    alert('New Librarian Created Successfully');
+                    alert('Librarian Created Successfully');
                     window.location.href = "/",
                     console.log(data);
                 },
                 error: function() {
-                alert('Same username Already Exists');
+                alert('Username Already Exists');
         }
 
             })

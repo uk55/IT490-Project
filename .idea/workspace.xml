@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="Changed the frontend and added the files to create the frontend better." />
+    <list default="true" id="a9cfcf69-74c7-44bc-a3c1-d513caceb1c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/flask_frontend/templates/registration_librarian.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_frontend/templates/registration_librarian.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,6 +176,7 @@
       <workItem from="1589051053324" duration="6105000" />
       <workItem from="1589086474188" duration="3865000" />
       <workItem from="1589148257775" duration="908000" />
+      <workItem from="1589149443529" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="Added DB">
       <created>1583033624278</created>
@@ -252,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585529379282</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added deployemtn database">
+      <created>1589149557246</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589149557247</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +279,8 @@
     <MESSAGE value="Added phpMyAdmin to yml file. ip:3306 for the server.&#10;user: root&#10;pass:changeme" />
     <MESSAGE value="Added the back_end path to the yml file" />
     <MESSAGE value="Changed the frontend and added the files to create the frontend better." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the frontend and added the files to create the frontend better." />
+    <MESSAGE value="added deployemtn database" />
+    <option name="LAST_COMMIT_MESSAGE" value="added deployemtn database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="20" key="#Docker" timestamp="1582404499856">
@@ -285,11 +296,12 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="399" y="165" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1583715656754" />
-    <state x="413" y="0" key="CommitChangelistDialog2" timestamp="1585701185721">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="465" y="23" key="CommitChangelistDialog2" timestamp="1589149556754">
+      <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720/0.-1080.1920.1080@0.0.1280.720" timestamp="1585701185721" />
     <state x="413" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1583762448485" />
+    <state x="465" y="23" key="CommitChangelistDialog2/0.23.1440.837@0.23.1440.837" timestamp="1589149556754" />
     <state x="479" y="251" key="DockerComposeFileDialog" timestamp="1581454235268">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
