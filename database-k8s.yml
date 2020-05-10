@@ -1,3 +1,4 @@
+#Loadsup in minikube fine but won't load on the browser.
 ---
 apiVersion: v1
 kind: Secret
@@ -53,6 +54,34 @@ spec:
         - name: mysql-data
           persistentVolumeClaim:
             claimName: mysql-data-disk
+
+---
+#tag::db-rw-deployment[]
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-rw
+  labels:
+    app: db-rw
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db-rw
+  template:
+    metadata:
+      labels:
+        app: db-rw
+    spec:
+      containers:
+        - name: db-rw
+          image: mysql:5.7
+          env:
+            - name: MYSQL_PASSWORD
+              value: "changeme"
+            - name: MYSQL_REPLICA_PASSWORD
+              value: "changeme"
 ---
 apiVersion: v1
 kind: Service
