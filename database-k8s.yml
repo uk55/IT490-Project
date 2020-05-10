@@ -56,6 +56,9 @@ spec:
             claimName: mysql-data-disk
 
 ---
+#copied below deployment from professor
+# changed the image to mysql form postgres
+
 #tag::db-rw-deployment[]
 
 apiVersion: apps/v1
